@@ -1,5 +1,3 @@
-var argButtonName, buttonTest, buttonRock,buttonPaper,buttonScissors;
-
 function buttonClicked(argButtonName) {
     console.log(argButtonName)
     clearMessages();
@@ -19,16 +17,14 @@ function buttonClicked(argButtonName) {
     displayResult(playerMove,computerMove)
     console.log(argButtonName + ' został kliknięty');
 }
-// buttonTest = document.getElementById('button-test');
-// buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
-buttonRock = document.getElementById('button-rock');
+const buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked(1); });
 
-buttonPaper = document.getElementById('button-paper');
+const buttonPaper = document.getElementById('button-paper');
 buttonPaper.addEventListener('click', function(){ buttonClicked(2); });
 
-buttonScissors = document.getElementById('button-scissors');
+const buttonScissors = document.getElementById('button-scissors');
 buttonScissors.addEventListener('click', function(){ buttonClicked(3); });
 
 
