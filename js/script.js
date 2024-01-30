@@ -19,8 +19,8 @@ function buttonClicked(argButtonName) {
     displayResult(playerMove,computerMove)
     console.log(argButtonName + ' został kliknięty');
 }
-buttonTest = document.getElementById('button-test');
-buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
+// buttonTest = document.getElementById('button-test');
+// buttonTest.addEventListener('click', function(){ buttonClicked('Guzik TEST'); });
 
 buttonRock = document.getElementById('button-rock');
 buttonRock.addEventListener('click', function(){ buttonClicked(1); });
